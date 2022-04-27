@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_search"
+    app:startDestination="@id/search_list">
+
+    <fragment
+        android:id="@+id/search_list"
+        android:name="com.example.milolibrairy.views.search_list"
+        android:label="fragment_search_list"
+        tools:layout="@layout/fragment_search_list" >
+        <action
+            android:id="@+id/action_search_list_to_book_details2"
+            app:destination="@id/book_details2" />
+    </fragment>
+    <fragment
+        android:id="@+id/book_details2"
+        android:name="com.example.milolibrairy.views.Book_details"
+        android:label="fragment_book_details"
+        tools:layout="@layout/fragment_book_details" >
+        <argument
+            android:name="book_id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

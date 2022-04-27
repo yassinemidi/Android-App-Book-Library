@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background_auth"
+    tools:context=".views.register">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="?attr/colorControlNormal"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="29dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="321dp"
+                android:fontFamily="monospace"
+                android:text="Register"
+                android:textColor="@color/material_on_primary_emphasis_medium"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etprenom"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/etnom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etnom"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/etemail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etprenom" />
+
+            <EditText
+                android:id="@+id/etemail"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/etpassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etnom" />
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/etconfirmPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etemail" />
+
+            <EditText
+                android:id="@+id/etconfirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etpassword" />
+
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/rounded_btnlogin"
+                android:text="Sign Up"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="101dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <RadioButton
+                    android:id="@+id/rbtnprof"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Professeur"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbtnetud"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Etudiant"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="86dp"
+                android:layout_marginBottom="42dp"
+                android:text="Login"
+                android:textColor="#C8C3C3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/ceviche_one"
+        android:text="MILO Lybrairy"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background_auth"
+    tools:context=".views.profilAdmin">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="?attr/colorControlNormal"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="29dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="monospace"
+                android:text="Update Your Profile"
+                android:textColor="@color/material_on_primary_emphasis_medium"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/etprenompa"
+                app:layout_constraintEnd_toEndOf="@+id/etprenompa"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etprenompa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="19dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/etlastNamepa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <EditText
+                android:id="@+id/etlastNamepa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/etemailpa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etprenompa" />
+
+            <EditText
+                android:id="@+id/etemailpa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/etpasswordpa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etlastNamepa" />
+
+            <EditText
+                android:id="@+id/etpasswordpa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/etconfirmPassworda"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etemailpa" />
+
+            <EditText
+                android:id="@+id/etconfirmPassworda"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="38dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/secular_one"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="#E4E1E1"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/btnUpdatea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etpasswordpa" />
+
+            <Button
+                android:id="@+id/btnUpdatea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_btnlogin"
+                android:text="Update"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etconfirmPassworda" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/ceviche_one"
+        android:text="Profile Admin"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

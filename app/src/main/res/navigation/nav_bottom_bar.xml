@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom_bar"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.milolibrairy.views.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_book_details"
+            app:destination="@id/book_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/populaire"
+        android:name="com.example.milolibrairy.views.populaire"
+        android:label="fragment_populaire"
+        tools:layout="@layout/fragment_populaire" >
+        <action
+            android:id="@+id/action_populaire_to_book_details"
+            app:destination="@id/book_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBooks"
+        android:name="com.example.milolibrairy.views.MyBooks"
+        android:label="fragment_my_books"
+        tools:layout="@layout/fragment_my_books" >
+        <action
+            android:id="@+id/action_myBooks_to_feedback2"
+            app:destination="@id/feedback2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.milolibrairy.views.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.milolibrairy.views.search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/book_details"
+        android:name="com.example.milolibrairy.views.Book_details"
+        android:label="fragment_book_details"
+        tools:layout="@layout/fragment_book_details" >
+        <argument
+            android:name="book_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedback2"
+        android:name="com.example.milolibrairy.views.feedback"
+        android:label="feedback" >
+        <argument
+            android:name="book_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>

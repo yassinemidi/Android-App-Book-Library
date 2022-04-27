@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addBookAdmin"
+        android:icon="@drawable/add"
+        android:title="Add Book" />
+    <item
+        android:id="@+id/updateBookAdmin"
+        android:icon="@drawable/update"
+        android:title="Update Book" />
+    <item
+        android:id="@+id/deleteBookAdmin"
+        android:icon="@drawable/delete"
+        android:title="Delete Book" />
+
+    <item
+        android:id="@+id/profileadm"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom_admin"
+    app:startDestination="@id/addBookAdmin">
+
+    <fragment
+        android:id="@+id/updateBookAdmin"
+        android:name="com.example.milolibrairy.views.updateBookAdmin"
+        android:label="fragment_update_book_admin"
+        tools:layout="@layout/fragment_update_book_admin" >
+        <action
+            android:id="@+id/action_updateBookAdmin_to_form_update_admin"
+            app:destination="@id/form_update_admin" />
+        <action
+            android:id="@+id/action_updateBookAdmin_to_bookDaitalsAdmin"
+            app:destination="@id/bookDaitalsAdmin" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteBookAdmin"
+        android:name="com.example.milolibrairy.views.deleteBookAdmin"
+        android:label="fragment_delete_book_admin"
+        tools:layout="@layout/fragment_delete_book_admin" >
+        <action
+            android:id="@+id/action_deleteBookAdmin_to_bookDaitalsAdmin"
+            app:destination="@id/bookDaitalsAdmin" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBookAdmin"
+        android:name="com.example.milolibrairy.views.addBookAdmin"
+        android:label="fragment_add_book_admin"
+        tools:layout="@layout/fragment_add_book_admin" />
+    <fragment
+        android:id="@+id/profileadm"
+        android:name="com.example.milolibrairy.views.profilAdmin"
+        android:label="fragment_profil_admin"
+        tools:layout="@layout/fragment_profil_admin" />
+    <fragment
+        android:id="@+id/form_update_admin"
+        android:name="com.example.milolibrairy.views.form_update_admin"
+        android:label="fragment_form_update_admin"
+        tools:layout="@layout/fragment_form_update_admin" >
+        <argument
+            android:name="book_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDaitalsAdmin"
+        android:name="com.example.milolibrairy.views.bookDaitalsAdmin"
+        android:label="fragment_book_daitals_admin"
+        tools:layout="@layout/fragment_book_daitals_admin" >
+        <argument
+            android:name="book_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_bookDaitalsAdmin_to_feedback_view"
+            app:destination="@id/feedback_view" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedback_view"
+        android:name="com.example.milolibrairy.views.feedback_view"
+        android:label="fragment_feedback_view"
+        tools:layout="@layout/fragment_feedback_view" >
+        <argument
+            android:name="book_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+</navigation>

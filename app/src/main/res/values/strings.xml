@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MiloLibrairy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="sppiner_hint">Filter By</string>
+    <string-array name="filter_list">
+        <item>All</item>
+        <item>Classique</item>
+        <item>Fiction</item>
+        <item>Romantique</item>
+        <item>Policier</item>
+        <item>Horreur</item>
+    </string-array>
+</resources>

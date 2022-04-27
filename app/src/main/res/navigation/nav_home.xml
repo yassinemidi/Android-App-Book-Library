@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/list_books">
+    <fragment
+        android:id="@+id/list_books"
+        android:name="com.example.milolibrairy.views.list_books"
+        android:label="fragment_list_books"
+        tools:layout="@layout/fragment_list_books" >
+        <action
+            android:id="@+id/action_list_books_to_book_details3"
+            app:destination="@id/book_details3" />
+        <action
+            android:id="@+id/action_list_books_to_search2"
+            app:destination="@id/search2" />
+    </fragment>
+    <fragment
+        android:id="@+id/book_details3"
+        android:name="com.example.milolibrairy.views.Book_details"
+        android:label="fragment_book_details"
+        tools:layout="@layout/fragment_book_details" >
+        <action
+            android:id="@+id/action_book_details3_to_list_books"
+            app:destination="@id/list_books" />
+        <argument
+            android:name="book_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/search2"
+        android:name="com.example.milolibrairy.views.search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_search2_to_book_details3"
+            app:destination="@id/book_details3" />
+    </fragment>
+</navigation>
